@@ -1,0 +1,19 @@
+.grid {
+	display: grid;
+}
+
+.item.grid {
+ 	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem
+}
+
+label.grid {
+	grid-gap: 5px
+}
+
+input,
+button {
+	border: 1px solid #999;
+	padding: .5rem;
+	background-color: #fff
+}
