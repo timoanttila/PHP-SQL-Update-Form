@@ -35,16 +35,16 @@ if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()){
 
 		// One link section
-		echo "<div class='grid'>";
+		echo "<div class='item grid'>";
 
 			// Logo link
-			echo "<label class='img'>";
+			echo "<label class='img grid'>";
 				echo "<span>Logo</span>";
 				echo "<input type='text' name='logo[]'>";
 			echo "</label>";
 
 			// Download link
-			echo "<label class='download'>";
+			echo "<label class='download grid'>";
 				echo "<span>Download</span>";
 				echo "<input type='text' name='downlaod[]'>";
 			echo "</label>";
