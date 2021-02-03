@@ -10,7 +10,7 @@ if($_POST["download"){
 		if(!$item) continue;
 
 		// Update
-		$db->query("UPDATE helpers SET '". strip_tags($item) ."', logoLink = '". strip_tags($_POST["logo"][$i]) ."' WHERE id = $id LIMIT 1");
+		$db->query("UPDATE helpers SET downloadLink = '". strip_tags($item) ."', logoLink = '". strip_tags($_POST["logo"][$i]) ."' WHERE id = $id LIMIT 1");
 
 		// Plus one
 		$i++;
